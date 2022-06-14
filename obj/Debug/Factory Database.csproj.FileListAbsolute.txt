@@ -1,0 +1,58 @@
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\Factory_Database.exe.config
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\Factory_Database.exe
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\Factory_Database.pdb
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\CrystalDecisions.Web.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\stdole.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory Database.csproj.AssemblyReference.cache
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory Database.csproj.SuggestedBindingRedirects.cache
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Interop.CrystalAnalysisCommLayerLib.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Interop.CrystalAnalysisCommonControlsLib.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Interop.CrystalAnalysisRequestModelLib.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Interop.CrystalAnalysisXmlSerializeLib.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Interop.CrystalClientDocLib.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Interop.CrystalDocMgmtUndoManagerLib.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Interop.CrystalReportsCommonObjectModelLib.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Interop.CrystalReportsControllersLib.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Interop.CrystalReportsCubeDefModelLib.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Interop.CrystalReportsDataDefModelLib.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Interop.CrystalReportsObjectFactoryLib.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Interop.CrystalReportsReportDefModelLib.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Interop.PROMPTINGLib.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Interop.SAXSERIALIZELib.dll
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory Database.csproj.ResolveComReference.cache
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.AddProductForm.resources
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.AddUserForm.resources
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.BackupForm.resources
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.CategoriesForm.resources
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.CustomersForm.resources
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.ImagePreviewForm.resources
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.LoginForm.resources
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.MainForm.resources
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.OrdersForm.resources
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.ProductsForm.resources
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.ListForm.resources
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.ReportForm.resources
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.RestoreForm.resources
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.UsersForm.resources
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.Properties.Resources.resources
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory Database.csproj.GenerateResource.cache
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory Database.csproj.CoreCompileInputs.cache
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory Database.csproj.CopyComplete
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.exe
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.pdb
