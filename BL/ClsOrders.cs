@@ -94,7 +94,6 @@ namespace Factory_Database.BL {
 				Value = idOrder
 			};
 
-
 			return dataAccessLayer.SelectData("GET_ORDER_DETAIL", param);
 		}
 

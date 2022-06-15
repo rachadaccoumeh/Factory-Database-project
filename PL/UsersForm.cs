@@ -15,6 +15,7 @@ namespace Factory_Database.PL {
 		}
 
 		private void button3_Click(object sender, EventArgs e) {
+			if (dgvUsers.CurrentRow == null) return;
 			var addUserForm = new AddUserForm();
 			addUserForm.btnSave.Text = "Edit User";
 			addUserForm.txtID.Text = dgvUsers.CurrentRow.Cells[0].Value.ToString();
@@ -28,6 +29,7 @@ namespace Factory_Database.PL {
 		}
 
 		private void button4_Click(object sender, EventArgs e) {
+			if (dgvUsers.CurrentRow == null) return;
 			if (MessageBox.Show("Do you want to delete selected user", "Delete", MessageBoxButtons.YesNo,
 				    MessageBoxIcon.Exclamation) != DialogResult.Yes) return;
 			_clsLogin.DeleteUser(dgvUsers.CurrentRow.Cells[0].Value.ToString());

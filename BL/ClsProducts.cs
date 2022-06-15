@@ -10,26 +10,24 @@ namespace Factory_Database.BL {
 			return dataAccessLayer.SelectData("GET_ALL_CATEGORIES", null);
 		}
 
-		public void AddProduct(int idCat, string labelProduct, string idProduct, int qteInStock, string price,
+		public void AddProduct(string labelProduct, string idProduct, int qteInStock, string price,
 			byte[] imageProduct) {
 			var dataAccessLayer = new DataAccessLayer();
-			var sqlParameters = new SqlParameter[6];
-			sqlParameters[0] = new SqlParameter("@ID_CAT", SqlDbType.Int) {
-				Value = idCat
-			};
-			sqlParameters[1] = new SqlParameter("@ID_PRODUCT", SqlDbType.VarChar, 30) {
+			var sqlParameters = new SqlParameter[5];
+
+			sqlParameters[0] = new SqlParameter("@ID_PRODUCT", SqlDbType.VarChar, 30) {
 				Value = idProduct
 			};
-			sqlParameters[2] = new SqlParameter("@Label", SqlDbType.VarChar, 30) {
+			sqlParameters[1] = new SqlParameter("@Label", SqlDbType.VarChar, 30) {
 				Value = labelProduct
 			};
-			sqlParameters[3] = new SqlParameter("@quantity", SqlDbType.Int) {
+			sqlParameters[2] = new SqlParameter("@quantity", SqlDbType.Int) {
 				Value = qteInStock
 			};
-			sqlParameters[4] = new SqlParameter("@price", SqlDbType.VarChar, 50) {
+			sqlParameters[3] = new SqlParameter("@price", SqlDbType.VarChar, 50) {
 				Value = price
 			};
-			sqlParameters[5] = new SqlParameter("@Image", SqlDbType.Image) {
+			sqlParameters[4] = new SqlParameter("@Image", SqlDbType.Image) {
 				Value = imageProduct
 			};
 			dataAccessLayer.ExecuteCommand("ADD_PRODUCT", sqlParameters);
@@ -55,8 +53,7 @@ namespace Factory_Database.BL {
 			sqlParameters[0] = new SqlParameter("@S", SqlDbType.VarChar, 50) {
 				Value = search
 			};
-			 return dataAccessLayer.SelectData("SEARCH_PRODUCT", sqlParameters);
-			
+			return dataAccessLayer.SelectData("SEARCH_PRODUCT", sqlParameters);
 		}
 
 		public void DeleteProduct(string delete) {
@@ -76,29 +73,26 @@ namespace Factory_Database.BL {
 				Value = id
 			};
 			return dataAccessLayer.SelectData("GEt_IMAGE_PRODUCT", sqlParameters);
-			
 		}
 
-		public void UpdateProduct(int idCat, string labelProduct, string idProduct, int qteInStock, string price,
+		public void UpdateProduct(string labelProduct, string idProduct, int qteInStock, string price,
 			byte[] imageProduct) {
 			var dataAccessLayer = new DataAccessLayer();
-			var sqlParameters = new SqlParameter[6];
-			sqlParameters[0] = new SqlParameter("@ID_CAT", SqlDbType.Int) {
-				Value = idCat
-			};
-			sqlParameters[1] = new SqlParameter("@ID_PRODUCT", SqlDbType.VarChar, 30) {
+			var sqlParameters = new SqlParameter[5];
+
+			sqlParameters[0] = new SqlParameter("@ID_PRODUCT", SqlDbType.VarChar, 30) {
 				Value = idProduct
 			};
-			sqlParameters[2] = new SqlParameter("@Label", SqlDbType.VarChar, 30) {
+			sqlParameters[1] = new SqlParameter("@Label", SqlDbType.VarChar, 30) {
 				Value = labelProduct
 			};
-			sqlParameters[3] = new SqlParameter("@quantity", SqlDbType.Int) {
+			sqlParameters[2] = new SqlParameter("@quantity", SqlDbType.Int) {
 				Value = qteInStock
 			};
-			sqlParameters[4] = new SqlParameter("@price", SqlDbType.VarChar, 50) {
+			sqlParameters[3] = new SqlParameter("@price", SqlDbType.VarChar, 50) {
 				Value = price
 			};
-			sqlParameters[5] = new SqlParameter("@Image", SqlDbType.Image) {
+			sqlParameters[4] = new SqlParameter("@Image", SqlDbType.Image) {
 				Value = imageProduct
 			};
 			dataAccessLayer.ExecuteCommand("UPDATE_PRODUCT", sqlParameters);

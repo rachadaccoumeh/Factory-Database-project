@@ -87,7 +87,7 @@ namespace Factory_Database.BL {
 		public DataTable SearchCustomer(string criterion) {
 			var dataAccessLayer = new DataAccessLayer();
 			var sqlParameters = new SqlParameter[1];
-			sqlParameters[0] = new SqlParameter("@Criterion", SqlDbType.VarChar, 50) {
+			sqlParameters[0] = new SqlParameter("@S", SqlDbType.VarChar, 50) {
 				Value = criterion
 			};
 			return dataAccessLayer.SelectData("Search_Customer", sqlParameters);

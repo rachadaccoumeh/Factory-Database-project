@@ -148,15 +148,19 @@ namespace Factory_Database.PL {
 			customersListForm.dataGridView1.Columns[5].Visible = false;
 			customersListForm.ShowDialog();
 			pbox.Image = null;
-			txtCustomerID.Text = customersListForm.dataGridView1.CurrentRow.Cells[0].Value.ToString();
-			txtFirstName.Text = customersListForm.dataGridView1.CurrentRow.Cells[1].Value.ToString();
-			txtLastName.Text = customersListForm.dataGridView1.CurrentRow.Cells[2].Value.ToString();
-			txtTel.Text = customersListForm.dataGridView1.CurrentRow.Cells[3].Value.ToString();
-			txtEmail.Text = customersListForm.dataGridView1.CurrentRow.Cells[4].Value.ToString();
-			if (customersListForm.dataGridView1.SelectedRows[0].Cells[5].Value == DBNull.Value) return;
-			var memoryStream =
-				new MemoryStream((byte[]) customersListForm.dataGridView1.SelectedRows[0].Cells[5].Value);
-			pbox.Image = Image.FromStream(memoryStream);
+			try {
+				txtCustomerID.Text = customersListForm.dataGridView1.CurrentRow.Cells[0].Value.ToString();
+				txtFirstName.Text = customersListForm.dataGridView1.CurrentRow.Cells[1].Value.ToString();
+				txtLastName.Text = customersListForm.dataGridView1.CurrentRow.Cells[2].Value.ToString();
+				txtTel.Text = customersListForm.dataGridView1.CurrentRow.Cells[3].Value.ToString();
+				txtEmail.Text = customersListForm.dataGridView1.CurrentRow.Cells[4].Value.ToString();
+				if (customersListForm.dataGridView1.SelectedRows[0].Cells[5].Value == DBNull.Value) return;
+				var memoryStream =
+					new MemoryStream((byte[]) customersListForm.dataGridView1.SelectedRows[0].Cells[5].Value);
+				pbox.Image = Image.FromStream(memoryStream);
+			} catch (NullReferenceException exception) {
+				Console.WriteLine(exception);
+			}
 		}
 
 

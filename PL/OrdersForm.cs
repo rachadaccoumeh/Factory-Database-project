@@ -31,7 +31,7 @@ namespace Factory_Database.PL {
 		}
 
 		private void txtSearch_TextChanged(object sender, EventArgs e) {
-			dgvOrders.DataSource = _clsOrders.SearchOrders("");
+			dgvOrders.DataSource = _clsOrders.SearchOrders(txtSearch.Text);
 		}
 	}
 }

@@ -65,7 +65,7 @@ private void InitializeComponent() {
 	// 
 	this.cmbType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 	this.cmbType.FormattingEnabled = true;
-	this.cmbType.Items.AddRange(new object[] {"MANAGER", "USER", "ADMIN"});
+	this.cmbType.Items.AddRange(new object[] { "WORKER", "ADMIN","RECIPE","ORDER","INVENTORY"});
 	this.cmbType.Location = new System.Drawing.Point(153, 157);
 	this.cmbType.Name = "cmbType";
 	this.cmbType.Size = new System.Drawing.Size(200, 27);

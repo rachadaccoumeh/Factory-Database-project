@@ -57,14 +57,23 @@
   <ItemGroup>
     <Compile Include="BL\ClsCustomers.cs" />
     <Compile Include="BL\ClsLogin.cs" />
+    <Compile Include="BL\ClsMain.cs" />
     <Compile Include="BL\ClsOrders.cs" />
     <Compile Include="BL\ClsProducts.cs" />
+    <Compile Include="BL\ClsRawMaterial.cs" />
+    <Compile Include="BL\ClsRecipe.cs" />
     <Compile Include="DAL\DataAccessLayer.cs" />
     <Compile Include="PL\AddProductForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PL\AddProductForm.Designer.cs">
       <DependentUpon>AddProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\AddRecipeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\AddRecipeForm.Designer.cs">
+      <DependentUpon>AddRecipeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\AddUserForm.cs">
       <SubType>Form</SubType>
@@ -77,12 +86,6 @@
     </Compile>
     <Compile Include="PL\BackupForm.Designer.cs">
       <DependentUpon>BackupForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PL\CategoriesForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PL\CategoriesForm.Designer.cs">
-      <DependentUpon>CategoriesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\CustomersForm.cs">
       <SubType>Form</SubType>
@@ -132,6 +135,12 @@
     <Compile Include="PL\ListForm.Designer.cs">
       <DependentUpon>ListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\RawMaterialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\RawMaterialForm.Designer.cs">
+      <DependentUpon>RawMaterialForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\ReportForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +152,12 @@
     </Compile>
     <Compile Include="PL\RestoreForm.Designer.cs">
       <DependentUpon>RestoreForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\StatisticsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\StatisticsForm.Designer.cs">
+      <DependentUpon>StatisticsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\UsersForm.cs">
       <SubType>Form</SubType>
@@ -164,18 +179,6 @@
       <DependentUpon>ProductsReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report\CategoriesReport.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CategoriesReport.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report\CategoryReport.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CategoryReport.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Report\BillReport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -185,14 +188,14 @@
     <EmbeddedResource Include="PL\AddProductForm.resx">
       <DependentUpon>AddProductForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\AddRecipeForm.resx">
+      <DependentUpon>AddRecipeForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\AddUserForm.resx">
       <DependentUpon>AddUserForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\BackupForm.resx">
       <DependentUpon>BackupForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PL\CategoriesForm.resx">
-      <DependentUpon>CategoriesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\CustomersForm.resx">
       <DependentUpon>CustomersForm.cs</DependentUpon>
@@ -215,11 +218,17 @@
     <EmbeddedResource Include="PL\ListForm.resx">
       <DependentUpon>ListForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\RawMaterialForm.resx">
+      <DependentUpon>RawMaterialForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\ReportForm.resx">
       <DependentUpon>ReportForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\RestoreForm.resx">
       <DependentUpon>RestoreForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\StatisticsForm.resx">
+      <DependentUpon>StatisticsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\UsersForm.resx">
       <DependentUpon>UsersForm.cs</DependentUpon>
@@ -240,14 +249,6 @@
     <EmbeddedResource Include="Report\ProductsReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ProductsReport.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Report\CategoriesReport.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CategoriesReport.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Report\CategoryReport.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CategoryReport.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Report\BillReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

@@ -39,7 +39,6 @@ C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory Database
 C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.AddProductForm.resources
 C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.AddUserForm.resources
 C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.BackupForm.resources
-C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.CategoriesForm.resources
 C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.CustomersForm.resources
 C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.ImagePreviewForm.resources
 C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.LoginForm.resources
@@ -56,3 +55,6 @@ C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory Database
 C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory Database.csproj.CopyComplete
 C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.exe
 C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.pdb
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.StatisticsForm.resources
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.RawMaterialForm.resources
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.AddRecipeForm.resources

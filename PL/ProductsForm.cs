@@ -34,6 +34,7 @@ namespace Factory_Database.PL {
 		}
 
 		private void button2_Click(object sender, EventArgs e) {
+			if (dataGridView1.CurrentRow == null) return;
 			if (MessageBox.Show("Do you want to delete selected producy", "Delete operation", MessageBoxButtons.YesNo,
 				    MessageBoxIcon.Exclamation) == DialogResult.Yes) {
 				_clsProducts.DeleteProduct(dataGridView1.CurrentRow.Cells[0].Value.ToString());
@@ -47,6 +48,7 @@ namespace Factory_Database.PL {
 		}
 
 		private void button3_Click(object sender, EventArgs e) {
+			if (dataGridView1.CurrentRow == null) return;
 			var addProductForm = new AddProductForm();
 			//addProductForm.MdiParent = ActiveForm;
 			addProductForm.Text = "Edit Product: " + dataGridView1.CurrentRow.Cells[1].Value;
@@ -55,7 +57,6 @@ namespace Factory_Database.PL {
 			addProductForm.txtDes.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
 			addProductForm.txtQty.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
 			addProductForm.txtPrice.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-			addProductForm.categoriesCB.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
 			addProductForm.btnAdd.Text = "Edit";
 			var image = (byte[]) _clsProducts.GetProductImage(dataGridView1.CurrentRow.Cells[0].Value.ToString())
 				.Rows[0][0];
@@ -64,6 +65,7 @@ namespace Factory_Database.PL {
 		}
 
 		private void button4_Click(object sender, EventArgs e) {
+			if (dataGridView1.CurrentRow == null) return;
 			var imagePreviewForm = new ImagePreviewForm();
 			var image = (byte[]) _clsProducts.GetProductImage(dataGridView1.CurrentRow.Cells[0].Value.ToString())
 				.Rows[0][0];
@@ -86,6 +88,7 @@ namespace Factory_Database.PL {
 		}
 
 		private void button5_Click(object sender, EventArgs e) {
+			if (dataGridView1.CurrentRow == null) return;
 			Cursor = Cursors.WaitCursor;
 			var productReport = new ProductReport();
 			productReport.SetParameterValue("@ID", dataGridView1.CurrentRow.Cells[0].Value.ToString());

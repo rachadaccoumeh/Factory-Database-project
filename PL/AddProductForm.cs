@@ -14,9 +14,6 @@ namespace Factory_Database.PL {
 		}
 
 		private void AddProductForm_Load(object sender, EventArgs e) {
-			categoriesCB.DataSource = _clsProducts.GetAllCategories();
-			categoriesCB.DisplayMember = "DESCRIPTION_CAT";
-			categoriesCB.ValueMember = "ID_CAT";
 			txtId.Focus();
 		}
 
@@ -29,23 +26,30 @@ namespace Factory_Database.PL {
 		}
 
 		private void btnAdd_Click(object sender, EventArgs e) {
+			if (txtId.Text == string.Empty && txtDes.Text == string.Empty && txtPrice.Text == string.Empty &&
+			    txtQty.Text == string.Empty) return;
 			var memoryStream = new MemoryStream();
 			pictureBox1.Image.Save(memoryStream, pictureBox1.Image.RawFormat);
 			var byteImage = memoryStream.ToArray();
 			if (btnAdd.Text == "Add") {
-				_clsProducts.AddProduct(Convert.ToInt32(categoriesCB.SelectedValue), txtDes.Text, txtId.Text,
-					Convert.ToInt32(txtQty.Text), txtPrice.Text, byteImage);
+				_clsProducts.AddProduct(txtDes.Text, txtId.Text, Convert.ToInt32(txtQty.Text), txtPrice.Text,
+					byteImage);
 				MessageBox.Show("Add success", "product added successfuly", MessageBoxButtons.OK,
 					MessageBoxIcon.Information);
 			} else {
-				_clsProducts.UpdateProduct(Convert.ToInt32(categoriesCB.SelectedValue), txtDes.Text, txtId.Text,
-					Convert.ToInt32(txtQty.Text), txtPrice.Text, byteImage);
+				_clsProducts.UpdateProduct(txtDes.Text, txtId.Text, Convert.ToInt32(txtQty.Text), txtPrice.Text,
+					byteImage);
 				MessageBox.Show("update success", "product updated successfuly", MessageBoxButtons.OK,
 					MessageBoxIcon.Information);
 				Close();
 			}
 
 			ProductsForm.GetProductsForm.dataGridView1.DataSource = _clsProducts.GetAllProducts();
+			txtDes.Clear();
+			txtId.Clear();
+			txtPrice.Clear();
+			txtQty.Clear();
+			pictureBox1.Image = null;
 		}
 
 		private void txtId_Validated(object sender, EventArgs e) {
@@ -60,6 +64,12 @@ namespace Factory_Database.PL {
 
 		private void button2_Click(object sender, EventArgs e) {
 			Close();
+		}
+
+		private void txtQty_KeyPress(object sender, KeyPressEventArgs e) {
+			if (!char.IsDigit(e.KeyChar) && e.KeyChar != 8) {
+				e.Handled = true;
+			}
 		}
 	}
 }
