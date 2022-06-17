@@ -61,6 +61,31 @@ namespace Factory_Database.BL {
 			};
 			return dataAccessLayer.SelectData("Search_RawMaterial", sqlParameters);
 		}
-		
+
+		public DataTable verifyRawQty(int id, int quantity) {
+			var dataAccessLayer = new DataAccessLayer();
+			var sqlParameters = new SqlParameter[2];
+			sqlParameters[0] = new SqlParameter("@ID_RAW", SqlDbType.VarChar, 50) {
+				Value = id
+			};
+			sqlParameters[1] = new SqlParameter("@QTE", SqlDbType.VarChar, 50) {
+				Value = quantity
+			};
+			return dataAccessLayer.SelectData("VERIFY_RAW_QTY", sqlParameters);
+		}
+
+		public void removeRawQty(int rawId, int quantity) {
+			var dataAccessLayer = new DataAccessLayer();
+			var param = new SqlParameter[2];
+
+			param[0] = new SqlParameter("@ID", SqlDbType.Int) {
+				Value = rawId
+			};
+			param[1] = new SqlParameter("@QTY", SqlDbType.Int) {
+				Value = quantity
+			};
+
+			dataAccessLayer.ExecuteCommand("removeRawQty", param);
+		}
 	}
 }

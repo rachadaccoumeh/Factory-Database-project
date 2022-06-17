@@ -58,3 +58,4 @@ C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database
 C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.StatisticsForm.resources
 C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.RawMaterialForm.resources
 C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.AddRecipeForm.resources
+C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.ProductionProcessForm.resources

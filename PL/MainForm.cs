@@ -129,6 +129,9 @@ namespace Factory_Database.PL {
 		}
 
 		public void addAProductionProcessToolStripMenuItem_Click(object sender, EventArgs e) {
+			var productionProcessForm = new ProductionProcessForm();
+			productionProcessForm.MdiParent = this;
+			productionProcessForm.Show();
 		}
 	}
 }

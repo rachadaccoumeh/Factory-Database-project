@@ -47,13 +47,12 @@ namespace Factory_Database.PL {
 			txtFirstName.Clear();
 			ClearBoxes();
 			_dataTable.Clear();
-			dgvrawMaterials.DataSource = null;
 		}
 
 		private void btnPrint_Click(object sender, EventArgs e) {
 			if (txtProductID.Text == string.Empty) return;
 			Cursor = Cursors.WaitCursor;
-			var report = new BillReport();
+			var report = new Recipe();
 			var frm = new ReportForm();
 			report.SetDataSource(_clsRecipe.GetRecipeDetails(txtProductID.Text));
 			frm.crystalReportViewer1.ReportSource = report;
@@ -114,8 +113,7 @@ namespace Factory_Database.PL {
 				txtProductID.Text = productsListForm.dataGridView1.CurrentRow.Cells[0].Value.ToString();
 				txtFirstName.Text = productsListForm.dataGridView1.CurrentRow.Cells[1].Value.ToString();
 				var dataTable = _clsRecipe.GetRecipeDetails(txtProductID.Text);
-				if (dataTable.Rows.Count == 0)
-					_dataTable.Clear();
+				_dataTable.Clear();
 				for (var i = 0; i < dataTable.Rows.Count; i++) {
 					_dataTable.Rows.Add(dataTable.Rows[i][1], dataTable.Rows[i][4], dataTable.Rows[i][3]);
 				}
@@ -128,7 +126,7 @@ namespace Factory_Database.PL {
 
 
 		private void txtQty_KeyDown(object sender, KeyEventArgs e) {
-			if (e.KeyCode != Keys.Enter && txtQty.Text == string.Empty) return;
+			if (e.KeyCode != Keys.Enter || txtQty.Text == string.Empty) return;
 			for (var i = 0; i < dgvrawMaterials.Rows.Count; i++) {
 				if (dgvrawMaterials.Rows[i].Cells[0].Value.ToString() != txtIDrawMaterial.Text) continue;
 				MessageBox.Show("this rawMaterial already added", "Alert", MessageBoxButtons.OK,
@@ -158,8 +156,5 @@ namespace Factory_Database.PL {
 			txtQty.Clear();
 			btnBrowse.Focus();
 		}
-
-
-	
 	}
 }

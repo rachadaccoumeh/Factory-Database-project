@@ -97,5 +97,17 @@ namespace Factory_Database.BL {
 			};
 			dataAccessLayer.ExecuteCommand("UPDATE_PRODUCT", sqlParameters);
 		}
+
+		public void addQuantity(string productId, int quantity) {
+			var dataAccessLayer = new DataAccessLayer();
+			var sqlParameters = new SqlParameter[2];
+			sqlParameters[0] = new SqlParameter("@PRODUCT_ID", SqlDbType.VarChar, 30) {
+				Value = productId
+			};
+			sqlParameters[1] = new SqlParameter("@QUANTITY", SqlDbType.Int) {
+				Value = quantity
+			};
+			dataAccessLayer.ExecuteCommand("ADD_QUANTITY", sqlParameters);
+		}
 	}
 }

@@ -123,6 +123,12 @@
     <Compile Include="PL\OrdersForm.Designer.cs">
       <DependentUpon>OrdersForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\ProductionProcessForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\ProductionProcessForm.Designer.cs">
+      <DependentUpon>ProductionProcessForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\ProductsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +191,12 @@
       <DependentUpon>BillReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Report\Recipe.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Recipe.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="PL\AddProductForm.resx">
       <DependentUpon>AddProductForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -211,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\OrdersForm.resx">
       <DependentUpon>OrdersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\ProductionProcessForm.resx">
+      <DependentUpon>ProductionProcessForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\ProductsForm.resx">
       <DependentUpon>ProductsForm.cs</DependentUpon>
@@ -253,6 +268,10 @@
     <EmbeddedResource Include="Report\BillReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>BillReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Recipe.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Recipe.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
