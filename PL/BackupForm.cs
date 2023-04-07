@@ -24,13 +24,15 @@ namespace Factory_Database.PL {
 		}
 
 		private void btnCreate_Click(object sender, EventArgs e) {
-			var fileName = txtFileName.Text + "\\sales" + DateTime.Now.ToShortDateString().Replace('/', '-') +
-			               " - " + DateTime.Now.ToLongTimeString().Replace(':', '-');
+			Cursor = Cursors.WaitCursor;
+			var fileName = txtFileName.Text + "\\sales" + DateTime.Now.ToShortDateString().Replace('/', '-') + " - " +
+			               DateTime.Now.ToLongTimeString().Replace(':', '-');
 			var strQuery = "Backup Database sales to Disk='" + fileName + ".bak'";
 			_sqlCommand = new SqlCommand(strQuery, _sqlConnection);
 			_sqlConnection.Open();
 			_sqlCommand.ExecuteNonQuery();
 			_sqlConnection.Close();
+			Cursor = Cursors.Default;
 			MessageBox.Show("Backup created successfuly", "Create a backup", MessageBoxButtons.OK,
 				MessageBoxIcon.Information);
 		}

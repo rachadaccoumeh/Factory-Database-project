@@ -7,6 +7,11 @@ namespace Factory_Database.DAL {
 
 		public DataAccessLayer() {
 			_sqlConnection = new SqlConnection(@"Server=.\SQLEXPRESS; DATABASE=sales; INTEGRATED SECURITY =TRUE;");
+			/*_sqlConnection = new SqlConnection(@"Data Source=.\SQLEXPRESS;
+                          AttachDbFilename=C:\Users\Rachad\Documents\db\sales.mdf;
+                          Integrated Security=True;
+                          Connect Timeout=30;
+                          User Instance=True");*/
 		}
 
 		private void Open() {

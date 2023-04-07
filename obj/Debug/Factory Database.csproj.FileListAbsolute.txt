@@ -1,11 +1,6 @@
 C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\Factory_Database.exe.config
 C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\Factory_Database.exe
 C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\Factory_Database.pdb
-C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
-C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\CrystalDecisions.ReportSource.dll
-C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\CrystalDecisions.Shared.dll
-C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\CrystalDecisions.Web.dll
-C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\CrystalDecisions.Windows.Forms.dll
 C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
 C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
 C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
@@ -21,20 +16,6 @@ C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\CrystalDecisions
 C:\Users\Rachad\RiderProjects\Factory Database - Copy\bin\Debug\stdole.dll
 C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory Database.csproj.AssemblyReference.cache
 C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory Database.csproj.SuggestedBindingRedirects.cache
-C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Interop.CrystalAnalysisCommLayerLib.dll
-C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Interop.CrystalAnalysisCommonControlsLib.dll
-C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Interop.CrystalAnalysisRequestModelLib.dll
-C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Interop.CrystalAnalysisXmlSerializeLib.dll
-C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Interop.CrystalClientDocLib.dll
-C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Interop.CrystalDocMgmtUndoManagerLib.dll
-C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Interop.CrystalReportsCommonObjectModelLib.dll
-C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Interop.CrystalReportsControllersLib.dll
-C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Interop.CrystalReportsCubeDefModelLib.dll
-C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Interop.CrystalReportsDataDefModelLib.dll
-C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Interop.CrystalReportsObjectFactoryLib.dll
-C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Interop.CrystalReportsReportDefModelLib.dll
-C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Interop.PROMPTINGLib.dll
-C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Interop.SAXSERIALIZELib.dll
 C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory Database.csproj.ResolveComReference.cache
 C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.AddProductForm.resources
 C:\Users\Rachad\RiderProjects\Factory Database - Copy\obj\Debug\Factory_Database.PL.AddUserForm.resources

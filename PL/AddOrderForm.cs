@@ -36,6 +36,7 @@ namespace Factory_Database.PL {
 			dgvProducts.Columns[4].Width = 85;
 			dgvProducts.Columns[5].Width = 93;
 			dgvProducts.Columns[6].Width = 121;
+			dtOrder.MinDate=DateTime.Now;
 		}
 
 		private void btnNew_Click(object sender, EventArgs e) {

@@ -24,6 +24,7 @@ namespace Factory_Database.PL {
 		}
 
 		private void btnCreate_Click(object sender, EventArgs e) {
+			Cursor = Cursors.WaitCursor;
 			var strQuery =
 				"ALTER Database sales SET OFFLINE WITH ROLLBACK IMMEDIATE; Restore Database sales From Disk='" +
 				txtFileName.Text + "'";
@@ -31,6 +32,7 @@ namespace Factory_Database.PL {
 			_sqlConnection.Open();
 			_sqlCommand.ExecuteNonQuery();
 			_sqlConnection.Close();
+			Cursor = Cursors.Default;
 			MessageBox.Show("Backup Restored successfuly", "Backup Restore", MessageBoxButtons.OK,
 				MessageBoxIcon.Information);
 		}
